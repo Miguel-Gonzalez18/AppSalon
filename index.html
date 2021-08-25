@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Salón de Belleza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+
+    <div class="contenedor-estetica">
+        <div class="imagen"></div>
+        <div class="app">
+            <header class="header">
+                <h1>App Peluqueria</h1>
+            </header>
+            <nav class="tabs">
+                <button type="button" data-paso="1">Servicios</button>
+                <button type="button" data-paso="2">Información Cliente</button>
+                <button type="button" data-paso="3">Resumen</button>
+            </nav>
+
+            <!-- Inicia contenido App -->
+            <div id="paso-1" class="seccion">
+                <h2>Servicios</h2>
+                <p class="text-center">
+                    Elige tus servicios a continuación
+                </p>
+                <div id="servicios" class="listado-servicios">
+
+                </div>
+            </div>
+            <div id="paso-2" class="seccion">
+                <h2>Tus datos y citas</h2>
+                <p class="text-center">
+                    Coloca tus datos y la fecha de tu cita.
+                </p>
+                <form action="#" class="formulario" method="POST">
+                    <div class="campo">
+                        <label for="nombre"><i class="far fa-signature"></i> Tu nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Coloca tu nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="fecha"><i class="far fa-calendar-week"></i> Fecha</label>
+                        <input type="date" name="fecha" id="fecha">
+                    </div>
+                    <div class="campo">
+                        <label for="hora"><i class="fad fa-clock"></i> Hora</label>
+                        <input type="time" name="hora" id="hora">
+                    </div>
+                </form>
+            </div>
+            <div id="paso-3" class="seccion contenido-resumen">
+                <h2>Resumen</h2>
+            </div>
+
+            <div class="paginacion">
+                <button id="anterior">
+                    &Ll; Anterior
+                </button>
+                <button id="siguiente">
+                    Siguiente &Gg;
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>
